@@ -1,0 +1,14 @@
+/* style.css */
+@font-face {
+  font-family: 'MyFont';             /* Name you’ll use in CSS */
+  src: url('main_assets/fonts/Archivo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply to everything */
+body {
+  font-family: 'MyFont', sans-serif; /* fallback if font fails */
+  margin: 0;
+  padding: 0;
+}
