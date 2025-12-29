@@ -1,75 +1,196 @@
-<!DOCTYPE html>
-<html style="background-color: rgb(0,0,15)">
+<!doctype html>
+<html>
 	<head>
-		<title>Stocking</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="stocking logo.png">
+		<title>STOCKINGS | official website</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="favi.png" type="image/png">
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background: black;
+			  }
 
-	</head>
-	<body style="font-family: Arial, Helvetica, sans-serif;">
-	
-	
-	
-		<div style="position: relative; width: 90%; max-width: 506px; height: 650px; margin: 0 auto;">			
-			<div style="
-				position:absolute;
-				top:0px; left:0px;
-				width:93.5%; height:95%;
-				background: url('https://preview.redd.it/art-the-room-look-back-by-tatsuki-fujimoto-manga-coloring-v0-17cm42g84ue81.png?width=1080&crop=smart&auto=webp&s=eef5b46621c85ee2256a3cfc4138afe2a4d482d5') no-repeat center center / cover;
-				filter: blur(5px) brightness(0.5);
-				z-index:0;
-			"></div>
-			<!-- Grain overlay -->
-			<div style="
+			#bg-image {
 				position: absolute;
-				top: 0; left: 0;
-				width: 100%; height: 100%;
-				background: url('https://media1.tenor.com/m/lk5YUP4Co1QAAAAC/static-glitch.gif'); /* transparent noise image */
-				background-size: cover;
-				opacity: 0.05; /* very subtle */
-				z-index: 1;
-				animation: grainAnim 1s steps(10) infinite;
-			"></div>
-			<!-- Content -->
-			<div style="position: relative; z-index: 1;">
-				<img src="stocking logo.png" style="border-radius:5px; position: relative; z-index: 10" draggable="false">
-				<h1 style="background-color: rgb(0,0,40); color: rgb(255,255,255); width: 256px; height:100px; text-align: left; line-height: 120px; position:absolute; top:170px; left:80; border-radius:5px"><b>Stocking</b></h1>
-				<p style="font-size: 15px; color: rgb(255,255,255); position: absolute; z-index: 11; top: 200px; text-align: left; left: 0px"><b>so/bored</b></p>
-				<div style="width:460px; height:120px; overflow:auto; position:absolute; top:340px; left:0;">
-					<p style="color: rgb(220,220,220); font-size: 20px;">
-						Stocking.‚  Like the socks. Yes, I know its odd. <br>
-						Into programming （python ＆ lua） basketball‚ and some anime․<br>
-						<br>
-						Learning Japanese for 7 months （N5-4 Level)‚ going to start learning German again soon․<br>
-						Obviously I know English too․<br>
-						<br>
-						American․ Yipee I guess․․․ （America kinda sucks rn）<br>
-						<br>
-				</div>
-					</p> 
-					<p style="color: rgb(220,220,220); font-size: 20px; position: absolute; left: 260px; top: 0px;">
-						<a href="https://discord.gg/zjdn2VrBz9" style="color: rgb(225,225,225)">Discord Server</a><br>
-						<a href="https://vrchat.com/home/user/usr_0b8ae934-6604-499a-9a23-58344f4bed8a" style="color: rgb(225,225,225)">VRC</a><br>
-						<a href="https://mackerelzz.itch.io/" style="color: rgb(225, 225, 225)">Itch.io</a><br>
-					</p>
-					
-			</div>
-			<div style=" position:absolute; top: 450px; left: 0px;">
-				<h3 style="color: rgb(255,255,255); position:absolute; top:600; left:0;">I speak</h3> 
-				<h4 style="color: transparent;">Social Links</h4>
-				<h4 style="background-color: rgb(15,15,15); color: rgb(255,255,255); width: 60px; height:60; text-align: center; border-radius:5px;">English</h4>
-				<h4 style="background-color: rgb(15,15,15); color: rgb(255,255,255); width: 60px; height:60; text-align: center; border-radius:5px;">日本語</h4>
-				<h4 style="background-color: rgb(15,15,15); color: rgb(255,255,255); width: 60px; height:60; text-align: center; border-radius:5px;">Deutsch</h4>
-			</div>
-			<div style=" position:absolute; top: 450px; left: 200px; color: rgb(225,225,225); z-index: 15;">
-				<h3 style="color: rgb(255,255,255); position:absolute; top:600; left:0;">Projects:</h3> 
-				<a href="https://github.com/triggerfoxgames-stack/IdleZZ/tree/main" style="position:relative; top:50px;left:0px; color: rgb(225,225,225)">IdleZZ - A customizable screensaver</a>
-			</div>
-		</div>
-	</body>
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%); 
+				min-width: 110vw;  
+				min-height: 110vh;
+				object-fit: cover;
+				filter: brightness(0.7);
+				z-index: 0;
+			}
+			#pfp {
+				position: absolute;
+				top: 50%;
+				left: 52%;
+				transform: translate(-50%, -50%); /*base center */
+				pointer-events: none;
+			}
+
+			#alias {
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				transform: translateX(-50%);
+				color: rgb(225, 225, 225);
+				margin: 0;
+				font-size: 2rem;
+			}
+			#desc {
+				position: absolute;
+				top: 87%;
+				left: 50%;
+				transform: translateX(-50%);
+				color: rgb(225, 225, 225);
+				text-align: center;
+				margin: 0;
+				line-height: 1.4;
+			}
+			
+			h2 {
+				position: relative;
+				z-index:2;
+				text-align: left;
+				color:rgb(225,225,225);
+				left: 1%
+			}
+			
+			h2 a {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			h2 a:hover{
+				filter: brightness(0.7);
+			}
+			
+			.social {
+				position: relative;
+				top:0%;
+				left:1%;
+				z-index: 2;
+				draggable="false";
+				
+				
+			}
+			
+			.social a:hover{
+				filter: brightness(0.7);
+			}
+			
+			.no-select {
+				user-select: none;
+				-webkit-user-select: none; /* Safari */
+				-ms-user-select: none;     /* Old Edge */
+				pointer-events:none;
+			}
+
+			.email {
+				position: relative;
+				top:0%;
+				left:1%;
+				z-index:2;
+				color: rgb(255,255,255);
+			}
+			
+			.black-flow {
+				color: white;
+				-webkit-text-stroke: 1px white; 
+				font-weight: bold; 
+			}
+
+    </style>
+	</head>
 	
+	<body>
+		<img id="bg-image" class="no-select" src="main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false">
+		
+		<img id="pfp" class="no-select" src="main_assets/images/makato_kino.png" alt="pfp" draggable="false">
+		
+	<script>
+      const bgimg = document.getElementById("bg-image");
+      const pfpimg = document.getElementById("pfp");
+
+      // background
+      document.addEventListener("mousemove", (e) => {
+        const offsetX = (e.clientX - window.innerWidth / 2) / 20;
+        const offsetY = (e.clientY - window.innerHeight / 2) / 20;
+
+        bgimg.style.transform =
+          `translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
+      });
+
+      // pfp
+      let timer = 0;
+      function animateImage() {
+        timer += 1;
+        const sizeOffset = 80 + (5 * Math.sin(timer * 0.25));
+        pfpimg.style.transform =
+          `translate(-50%, -50%) scale(${sizeOffset / 100})`;
+        setTimeout(animateImage, 33.3);
+      }
+      animateImage();
+    </script>
+		
+		
+		<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>Stockings ストキング</b></h1>
+		<h1 id="desc"  class="no-select black-flow">
+			Yes, Stockings like the socks. Just someone silly doing cool stuff!<br>
+			 I like Art, Manga, and pretty much anything creative!
+			
+		</h1>
+		
+			<h2><a href="contents.html">CONTENTS</a></h2>
+			<h2><a href="manga.html">MANGA</a></h2>
+			<h2><a href="about.html">ABOUT</a></h2>
+			<div class="social">
+				<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
+				<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
+
+			</div>
+			<div class="email">
+				<p id="emailText" onclick="copyText()">Email: stockiings@proton.me</p>
+			</div>
+			<script>
+				function copyText() {
+					const el = document.getElementById("emailText");
+					
+					navigator.clipboard.writeText("stockiings@proton.me");
+					
+					const original = el.textContent;
+					el.textContent="Copied!"
+					el.classList.add("copied");
+					
+					setTimeout(() => {
+						el.textContent = original;
+						el.classList.remove("copied");
+						}, 1200);
+				}
+			</script>
+			
+			<style>
+				.email p {
+					cursor:pointer;
+					user-select: none;
+					color: rgb(225,225,225);
+					transition: transform 0.15s ease, color 0.15s ease;
+				}
+				
+				.email p:hover {
+					color: rgb(170,170,170);
+				}
+				
+				.emai; p.copied {
+					color: #7cff9b;
+				}
+			</style>
+	</body>
+	<footer>
+	</footer>
 </html>
-
-
-
-
