@@ -1,125 +1,30 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<title>STOCKINGS | GALLERY</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" href="favi.png" type="image/png">
+		<meta name="description" content="look at original anime/manga/oneshot artworks by Stockings, both commissioned and non-commissioned">
+		<meta property="og:title" content="Stockings – Manga, Art, and Programming">
+		<meta property="og:description" content="Original manga one-shots, artwork, and programming projects by Stockings.">
+		<meta property="og:image" content="https://stockiings.github.io/main_assets/images/shiori_cover.png">
+		<meta property="og:url" content="https://stockiings.github.io/">
 	</head>
 	<body>
-		This site is still under construction!! Nothing here yet!
-		
-		<style>
-			html, body {
-				margin: 0;
-				padding: 0;
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
-				background: black;
-			  }
-			  
-			#alias {
-				position: absolute;
-				top: 20px;
-				left: 50%;
-				transform: translateX(-50%);
-				color: rgb(225, 225, 225);
-				margin: 0;
-				font-size: 2rem;
-				z-index:2;
-			}
-			
-			.navigation {
-				position: relative;
-				z-index:2;
-				text-align: left;
-				color:rgb(225,225,225);
-				left: 1%;
-				top:10px;
-			}
-			
-			.navigation a {
-				color: inherit;
-				text-decoration: none;
-			}
-			
-			.navigation a:hover{
-				filter: brightness(0.7);
-			}
-			
-			.social {
-				position: relative;
-				top:0%;
-				left:1%;
-				z-index: 2;
-				draggable="false";
-				
-				
-			}
-			
-			.social a:hover{
-				filter: brightness(0.7);
-			}
-			
-			.no-select {
-				user-select: none;
-				-webkit-user-select: none; /* Safari */
-				-ms-user-select: none;     /* Old Edge */
-				pointer-events:none;
-			}
+		<nav class="navigation" aria-label="Main navigation">
+			<h2 class="visually-hidden">Main navigation</h2>
 
-			.email {
-				position: relative;
-				top:0%;
-				left:1%;
-				z-index:2;
-				color: rgb(255,255,255);
-			}
-			
-			.email p {
-					cursor:pointer;
-					user-select: none;
-					color: rgb(225,225,225);
-					transition: transform 0.15s ease, color 0.15s ease;
-			}
-				
-			.email p:hover {
-				color: rgb(170,170,170);
-			}
-				
-			.emai; p.copied {
-				color: #7cff9b;
-			}
-			
-			#bg-image {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%); 
-				min-width: 110vw;  
-				min-height: 110vh;
-				object-fit: cover;
-				filter: brightness(0.4);
-				z-index: 0;
-			}
-		</style>
-		
-		
-		<img id="bg-image" class="no-select" src="main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false">
-		<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>GALLERY</b></br>
-		________________________________________________
-		</h1>
-		<div class="navigation">
 			<img src="main_assets/images/stockingsbanner2.jpg" alt="stockings banner" width="20%" height="20%">
-			<h2><a href="index.html">HOME</a></h2>
-			<h2><a href="contents.html">CONTENTS</a></h2>
-			<h2><a href="gallery.html">GALLERY</a></h2>
-			<h2><a href="works.html">WORKS</a></h2>
-			<h2><a href="links.html">LINKS</a></h2>
-			<h2><a href="about.html">ABOUT</a></br>
-			_______________
-			</h2>
-		</div>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contents.html">Contents</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="works.html">Works</a></li>
+				<li><a href="links.html">Links</a></li>
+				<li><a href="about.html">About</a></li>
+			 </ul>
+		</nav>
 		<div class="social">
 			<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
 			<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
@@ -128,6 +33,20 @@
 			<div class="email">
 				<p id="emailText" onclick="copyText()">Email: stockiings@proton.me</p>
 			</div>
+	
+		<header>
+			<img id="bg-image" class="no-select" src="main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false" alt="anime/manga Art Background by stockings">
+			<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>GALLERY</b><br>
+			________________________________________________
+			</h1>
+			<h1>Stockings' gallery</h1>
+
+			
+			<p>
+				This section will feature original illustrations and manga artwork by Stockings.
+				Updates coming soon.
+			</p>
+		</header>
 			<script>
 			function copyText() {
 				const el = document.getElementById("emailText");
@@ -157,5 +76,15 @@
 					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
 				});
 			</script>
+			<main></main>
+			<footer>
+				<h2 class="visually-hidden">
+					Stockings – Manga Artist, Illustrator, and Programmer
+				</h2>
+				<p class="visually-hidden">
+					Stockings is a creator website featuring original manga one-shots,
+					digital artwork, and programming projects.
+				</p>
+			</footer>
 	</body>
 </html>

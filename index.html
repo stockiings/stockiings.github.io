@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<title>STOCKINGS | official website</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" href="favi.png" type="image/png">
+		<meta name="description" content="Original manga one-shots, digital artwork, and programming projects by Stockings.">
 		<style>
 			html, body {
 				margin: 0;
@@ -55,11 +56,12 @@
 			
 			.navigation {
 				position: relative;
-				z-index:2;
-				text-align: left;
-				color:rgb(225,225,225);
 				left: 1%;
-				top:10px;
+				top: 20px;
+				z-index: 2;
+				text-align: left;
+				color: rgb(225, 225, 225);
+				font-size: 60px;
 			}
 			
 			.navigation a {
@@ -71,15 +73,6 @@
 				filter: brightness(0.7);
 			}
 			
-			.social {
-				position: relative;
-				top:0%;
-				left:1%;
-				z-index: 2;
-				draggable="false";
-				
-				
-			}
 			
 			.social a:hover{
 				filter: brightness(0.7);
@@ -92,13 +85,6 @@
 				pointer-events:none;
 			}
 
-			.email {
-				position: relative;
-				top:0%;
-				left:1%;
-				z-index:2;
-				color: rgb(255,255,255);
-			}
 			
 			.black-flow {
 				color: white;
@@ -116,11 +102,49 @@
 				margin: 0;
 				line-height: 1.4;
 			}
-    </style>
+			
+			.visually-hidden {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0, 0, 0, 0);
+				white-space: nowrap;
+				border: 0;
+			}
+			nav h1,
+			nav h2,
+			nav ul {
+				margin: 0;
+			}
+
+			nav ul {
+				padding-left: 0;
+				list-style: none;
+			}
+			
+			.email p {
+					cursor:pointer;
+					user-select: none;
+					color: rgb(225,225,225);
+					transition: transform 0.15s ease, color 0.15s ease;
+				}
+				
+				.email p:hover {
+					color: rgb(170,170,170);
+				}
+				
+				.emai; p.copied {
+					color: #7cff9b;
+				}
+
+		</style>
 	</head>
 	
 	<body>
-		<img id="bg-image" class="no-select" src="main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false">
+		<img id="bg-image" class="no-select" src="main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false" alt="anime/manga Art Background by stockings">
 		
 		<img id="pfp" class="no-select" src="main_assets/images/makato_kino.png" alt="pfp" draggable="false">
 		
@@ -155,18 +179,22 @@
 			| What's New<br>
 			
 		</h1>
-		<h3>12/30/25 gui update!</h3>
-		<div class="navigation">
+		<h3>12/31/25 Site Indexing!!</h3>
+		<nav class="navigation" aria-label="Main navigation">
+			<h2 class="visually-hidden">Main navigation</h2>
+
 			<img src="main_assets/images/stockingsbanner2.jpg" alt="stockings banner" width="20%" height="20%">
-			<h2><a href="index.html">HOME</a></h2>
-			<h2><a href="contents.html">CONTENTS</a></h2>
-			<h2><a href="gallery.html">GALLERY</a></h2>
-			<h2><a href="works.html">WORKS</a></h2>
-			<h2><a href="links.html">LINKS</a></h2>
-			<h2><a href="about.html">ABOUT</a></br>
-			_______________
-			</h2>
-		</div>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contents.html">Contents</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="works.html">Works</a></li>
+				<li><a href="links.html">Links</a></li>
+				<li><a href="about.html">About</a></li>
+			 </ul>
+		</nav>
+
 		<div class="social">
 			<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
 			<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
@@ -192,24 +220,15 @@
 				}
 			</script>
 			
-			<style>
-				.email p {
-					cursor:pointer;
-					user-select: none;
-					color: rgb(225,225,225);
-					transition: transform 0.15s ease, color 0.15s ease;
-				}
-				
-				.email p:hover {
-					color: rgb(170,170,170);
-				}
-				
-				.emai; p.copied {
-					color: #7cff9b;
-				}
-			</style>
 	</body>
 	<footer>
+		<h2 class="visually-hidden">
+			Stockings – Manga Artist, Illustrator, and Programmer
+		</h2>
+		<p class="visually-hidden">
+			Stockings is a creator website featuring original manga one-shots,
+			digital artwork, and programming projects.
+		</p>
 	</footer>
 
 </html>
