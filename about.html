@@ -2,8 +2,216 @@
 <html>
 	<head>
 		<title>STOCKINGS | ABOUT</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="favi.png" type="image/png">
 	</head>
 	<body>
 		This site is still under construction!! Nothing here yet!
+		
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background: black;
+			}
+			
+			#alias {
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				transform: translateX(-50%);
+				color: rgb(225, 225, 225);
+				margin: 0;
+				font-size: 2rem;
+				z-index:2;
+			}
+		
+			.navigation {
+				position: relative;
+				z-index:2;
+				text-align: left;
+				color:rgb(225,225,225);
+				left: 1%;
+				top:10px;
+			}
+			
+			.navigation a {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			.navigation a:hover{
+				filter: brightness(0.7);
+			}
+			
+			.social {
+				position: relative;
+				top:0%;
+				left:1%;
+				z-index: 2;
+				draggable="false";
+				
+				
+			}
+			
+			.social a:hover{
+				filter: brightness(0.7);
+			}
+			
+			.no-select {
+				user-select: none;
+				-webkit-user-select: none; /* Safari */
+				-ms-user-select: none;     /* Old Edge */
+				pointer-events:none;
+			}
+
+			.email {
+				position: relative;
+				top:0%;
+				left:1%;
+				z-index:2;
+				color: rgb(255,255,255);
+			}
+			
+			.email p {
+					cursor:pointer;
+					user-select: none;
+					color: rgb(225,225,225);
+					transition: transform 0.15s ease, color 0.15s ease;
+			}
+				
+			.email p:hover {
+				color: rgb(170,170,170);
+			}
+				
+			.emai; p.copied {
+				color: #7cff9b;
+			}
+			
+			#bg-image {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%); 
+				min-width: 110vw;  
+				min-height: 110vh;
+				object-fit: cover;
+				filter: brightness(0.4);
+				z-index: 0;
+			}
+			
+			.main {
+				position: absolute;
+				top: 15%;
+				left: 49%;
+				transform: translateX(-50%);
+				color: rgb(225, 225, 225);
+				text-align: center;
+				margin: 0;
+				line-height: 1.4;
+				width: 55%; /* optional but helps readability */ 
+				max-height: 80vh; /* controls scroll area */ 
+				overflow: auto; /* enables scrolling */
+				text-align: left;
+				font-size: 24px;
+
+			}
+		</style>
+		
+		
+		<img id="bg-image" class="no-select" src="main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false">
+		<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>ABOUT</b></br>
+		________________________________________________
+		</h1>
+		<div class="navigation">
+			<img src="main_assets/images/stockingsbanner2.jpg" alt="stockings banner" width="20%" height="20%">
+			<h2><a href="index.html">HOME</a></h2>
+			<h2><a href="contents.html">CONTENTS</a></h2>
+			<h2><a href="gallery.html">GALLERY</a></h2>
+			<h2><a href="works.html">WORKS</a></h2>
+			<h2><a href="links.html">LINKS</a></h2>
+			<h2><a href="about.html">ABOUT</a></br>
+			_______________
+			</h2>
+		</div>
+		<div class="social">
+			<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
+			<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
+
+		</div>
+			<div class="email">
+				<p id="emailText" onclick="copyText()">Email: stockiings@proton.me</p>
+			</div>
+			<script>
+			function copyText() {
+				const el = document.getElementById("emailText");
+					
+				navigator.clipboard.writeText("stockiings@proton.me");
+					
+				const original = el.textContent;
+				el.textContent="Copied!"
+				el.classList.add("copied");
+					
+				setTimeout(() => {
+					el.textContent = original;
+					el.classList.remove("copied");
+				}, 1200);
+			}
+			</script>
+			
+			<script>
+				const bgimg = document.getElementById("bg-image");
+				
+				// background
+				document.addEventListener("mousemove", (e) => {
+				const offsetX = (e.clientX - window.innerWidth / 2) / 20;
+				const offsetY = (e.clientY - window.innerHeight / 2) / 20;
+
+					bgimg.style.transform =
+					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
+				});
+			</script>
+			
+			<div class="main">
+			
+				<h1>
+					Hi, Its me, Stockings!
+				</h1>
+				<p>
+				Hello there! Let me itnroduce myself. Call me Stockings!  </br>
+				Hashbrown/Fiend :)</br>
+				I'm American!</br>
+				Been learning Japanese for 7 months!</br>
+				</br>
+				I'm a manga artist, illustrator, and I do programming too!</br>
+				</br>
+				contact me through my email either for inquries, or just to chat!</br>
+				________________________________________________
+				</p>
+				<h1>
+					INTERESTS:
+				</h1>
+				<p>
+					________________________________________________</br>
+					Art and Manga</br>
+					Anime</br>
+					Programming</br>
+					Basketball</br>
+					Skullgirls</br>
+					Omori</br>
+					DDLC</br>
+					Little Nightmares </br>
+					River City Girls</br>
+					Senran Kagura</br>
+					Kakegurui</br>
+					Chainsaw man</br>
+					Spy X Family</br>
+					Tasokare Hotel</br>
+					Illusion Carnival
+				</p>
+			</div>
 	</body>
-</html?>
+</html>

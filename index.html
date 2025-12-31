@@ -22,7 +22,7 @@
 				min-width: 110vw;  
 				min-height: 110vh;
 				object-fit: cover;
-				filter: brightness(0.7);
+				filter: brightness(0.5);
 				z-index: 0;
 			}
 			#pfp {
@@ -53,20 +53,21 @@
 				line-height: 1.4;
 			}
 			
-			h2 {
+			.navigation {
 				position: relative;
 				z-index:2;
 				text-align: left;
 				color:rgb(225,225,225);
-				left: 1%
+				left: 1%;
+				top:10px;
 			}
 			
-			h2 a {
+			.navigation a {
 				color: inherit;
 				text-decoration: none;
 			}
 			
-			h2 a:hover{
+			.navigation a:hover{
 				filter: brightness(0.7);
 			}
 			
@@ -105,6 +106,16 @@
 				font-weight: bold; 
 			}
 
+			h3 {
+				position: absolute;
+				top: 95%;
+				left: 50%;
+				transform: translateX(-50%);
+				color: rgb(225, 225, 225);
+				text-align: center;
+				margin: 0;
+				line-height: 1.4;
+			}
     </style>
 	</head>
 	
@@ -130,7 +141,7 @@
       let timer = 0;
       function animateImage() {
         timer += 1;
-        const sizeOffset = 80 + (5 * Math.sin(timer * 0.25));
+        const sizeOffset = 80 + (2 * Math.sin(timer * 0.25));
         pfpimg.style.transform =
           `translate(-50%, -50%) scale(${sizeOffset / 100})`;
         setTimeout(animateImage, 33.3);
@@ -141,19 +152,26 @@
 		
 		<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>Stockings ストキング</b></h1>
 		<h1 id="desc"  class="no-select black-flow">
-			Yes, Stockings like the socks. Just someone silly doing cool stuff!<br>
-			 I like Art, Manga, and pretty much anything creative!
+			| What's New<br>
 			
 		</h1>
-		
+		<h3>12/29/25 Site creation</h3>
+		<div class="navigation">
+			<img src="main_assets/images/stockingsbanner2.jpg" alt="stockings banner" width="20%" height="20%">
+			<h2><a href="index.html">HOME</a></h2>
 			<h2><a href="contents.html">CONTENTS</a></h2>
-			<h2><a href="manga.html">MANGA</a></h2>
-			<h2><a href="about.html">ABOUT</a></h2>
-			<div class="social">
-				<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
-				<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
+			<h2><a href="gallery.html">GALLERY</a></h2>
+			<h2><a href="works.html">WORKS</a></h2>
+			<h2><a href="links.html">LINKS</a></h2>
+			<h2><a href="about.html">ABOUT</a></br>
+			_______________
+			</h2>
+		</div>
+		<div class="social">
+			<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
+			<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
 
-			</div>
+		</div>
 			<div class="email">
 				<p id="emailText" onclick="copyText()">Email: stockiings@proton.me</p>
 			</div>

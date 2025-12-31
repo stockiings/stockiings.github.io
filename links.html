@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>STOCKINGS | CONTENTS</title>
+		<title>STOCKINGS | LINKS</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" href="favi.png" type="image/png">
 	</head>
@@ -17,7 +17,7 @@
 				overflow: hidden;
 				background: black;
 			}
-		
+			
 			#alias {
 				position: absolute;
 				top: 20px;
@@ -28,7 +28,18 @@
 				font-size: 2rem;
 				z-index:2;
 			}
-		
+			  
+			#alias {
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				transform: translateX(-50%);
+				color: rgb(225, 225, 225);
+				margin: 0;
+				font-size: 2rem;
+				z-index:2;
+			}
+			
 			.navigation {
 				position: relative;
 				z-index:2;
@@ -106,7 +117,7 @@
 		
 		
 		<img id="bg-image" class="no-select" src="main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false">
-		<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>CONTENTS</b></br>
+		<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>LINKS</b></br>
 		________________________________________________
 		</h1>
 		<div class="navigation">
@@ -120,17 +131,15 @@
 			_______________
 			</h2>
 		</div>
-			
 		<div class="social">
 			<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
 			<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
 
 		</div>
-		
-		<div class="email">
+			<div class="email">
 				<p id="emailText" onclick="copyText()">Email: stockiings@proton.me</p>
-		</div>
-		<script>
+			</div>
+			<script>
 			function copyText() {
 				const el = document.getElementById("emailText");
 					
