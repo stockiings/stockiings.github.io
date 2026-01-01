@@ -144,3 +144,53 @@ nav ul {
   white-space: nowrap;
   border: 0;
 }
+
+.gallery {
+		display:grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 1rem;
+		padding: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 40px);
+  gap: 12px;
+  justify-content: center;
+}
+
+.gallery img:hover{
+	transform: scale(1.02);
+	opacity:0.9;
+}
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.gallery {
+  position: relative;
+  z-index: 2;
+}
+
+main {
+  position: absolute;
+  top: 20vh;              /* below your header */
+  left: 67%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 60vh;           /* defines scroll area */
+  overflow-y: auto;
+  z-index: 2;
+}

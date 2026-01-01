@@ -43,8 +43,7 @@
 
 			
 			<p>
-				This section will feature original illustrations and manga artwork by Stockings.
-				Updates coming soon.
+				This section  features original illustrations and manga artwork by Stockings.
 			</p>
 		</header>
 			<script>
@@ -76,7 +75,61 @@
 					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
 				});
 			</script>
-			<main></main>
+			<main>
+				<section class="gallery">
+					<img
+						src="gallery_images/thumbs/ryouka_40.png"
+						data-full="gallery_images/full/ryouka.png"
+						alt="an art competition entry by Stockings"
+						loading="lazy"
+					  >
+					
+					<img
+						src="gallery_images/thumbs/pookie_40.jpg"
+						data-full="gallery_images/full/pookie.png"
+						alt="an art competition entry by Stockings"
+						loading="lazy"
+					  >
+				
+					<img
+						src="gallery_images/thumbs/lacy_40.png"
+						data-full="gallery_images/full/lacy.png"
+						alt="anime girl illustration, Lacy arg character"
+						loading="lazy"
+					  >
+				
+					<img
+						src="gallery_images/thumbs/digi_40.png"
+						data-full="gallery_images/full/digi.png"
+						alt="anime girl illustration"
+						loading="lazy"
+					  >
+				
+				
+					<img
+						src="gallery_images/thumbs/kemi_40.png"
+						data-full="gallery_images/full/kemi.png"
+						alt="anime girl illustration"
+						loading="lazy"
+					  >
+				
+					<img
+						src="gallery_images/thumbs/julie_40.png"
+						data-full="gallery_images/full/julie.png"
+						alt="anime girl illustration"
+						loading="lazy"
+					  >
+				
+					<img
+						src="gallery_images/thumbs/olivia_40.png"
+						data-full="gallery_images/full/olivia.png"
+						alt="anime girl illustration"
+						loading="lazy"
+					  >
+					  
+				
+				</section>
+			</main>
 			<footer>
 				<h2 class="visually-hidden">
 					Stockings – Manga Artist, Illustrator, and Programmer
@@ -86,5 +139,30 @@
 					digital artwork, and programming projects.
 				</p>
 			</footer>
+			
+			<div id="lightbox">
+				<img id="lightbox-img">
+			</div>
+			
+			<script>
+				const lightbox= document.getElementById("lightbox");
+				const lightboxImg = document.getElementById("lightbox-img");
+				
+				document.querySelectorAll(".gallery img").forEach(img => {
+				  img.addEventListener("click", () => {
+					lightboxImg.src = img.dataset.full || img.src;
+					lightbox.style.display = "flex";
+				  });
+				});
+				
+				lightbox.addEventListener("click", () => {
+					lightbox.style.display = "none";
+				});
+
+
+			
+			
+			</script>
+
 	</body>
 </html>
