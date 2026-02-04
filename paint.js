@@ -18,15 +18,6 @@ canvas.addEventListener("mousedown", (e) => {
 canvas.addEventListener("mouseup", () => drawing=false);
 canvas.addEventListener("mouseleave", () => drawing=false);
 
-canvas.addEventListener("keydown", (e) => {
-  if (e.key === "x") {
-    drawing = true;
-    ctx.beginPath();
-    ctx.moveTo(e.offsetX, e.offsetY);
-  }
-});
-
-
 canvas.addEventListener("mousemove", draw); 
 
 document.querySelectorAll(".toolbar button").forEach(btn => {
@@ -47,14 +38,14 @@ document.querySelectorAll(".toolbar button").forEach(btn => {
 function draw(e) {
   if (!drawing) return;
 
-  ctx.lineWidth = brushSize;
+  ctx.lineWidth = brushsize;
 
   if (tool === "eraser") {
     ctx.globalCompositeOperation = "destination-out";
     ctx.strokeStyle = "rgba(0,0,0,1)";
   } else {
     ctx.globalCompositeOperation = "source-over";
-    ctx.strokeStyle = brushColor;
+    ctx.strokeStyle = brushcolor;
   }
 
   ctx.lineTo(e.offsetX, e.offsetY);
