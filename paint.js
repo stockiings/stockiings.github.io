@@ -1,4 +1,4 @@
-const canvas = document.getElementByID("canvas");
+const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 let drawing = false;
@@ -9,7 +9,11 @@ let brushsize = 5;
 ctx.lineCap = "round";
 
 // mouse setup
-canvas.addEventListener("mousedown", () => drawing=true);
+canvas.addEventListener("mousedown", (e) => {
+  drawing = true;
+  ctx.beginPath();
+  ctx.moveTo(e.offsetX, e.offsetY);
+});
 canvas.addEventListener("mouseup", () => drawing=false);
 canvas.addEventListener("mouseleave", () => drawing=false);
 
@@ -28,17 +32,17 @@ function draw(e) {
 }
 
 // color picker
-document.getElementByID("color").addEventListener("change", e => {
+document.getElementById("color").addEventListener("change", e => {
   brushcolor = e.target.value;
 });
 
 // brush size
-document.getElementByID("size").addEventListener("input", e => {
+document.getElementById("size").addEventListener("input", e => {
   brushsize = e.target.value;
 });
 
 // brush size
-document.getElementByID("eraser").addEventListener("click", () => {
+document.getElementById("eraser").addEventListener("click", () => {
   brushcolor = "#ffffff";
 });
 
