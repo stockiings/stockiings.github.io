@@ -18,6 +18,15 @@ canvas.addEventListener("mousedown", (e) => {
 canvas.addEventListener("mouseup", () => drawing=false);
 canvas.addEventListener("mouseleave", () => drawing=false);
 
+canvas.addEventListener("keydown", (e) => {
+  if (e.key === "x") {
+    drawing = true;
+    ctx.beginPath();
+    ctx.moveTo(e.offsetX, e.offsetY);
+  }
+});
+
+
 canvas.addEventListener("mousemove", draw); 
 
 document.querySelectorAll(".toolbar button").forEach(btn => {
