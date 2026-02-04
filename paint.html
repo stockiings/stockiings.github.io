@@ -11,8 +11,7 @@
         margin: 0;
         padding: 20px;
       }
-      .toolbar {
-        margin-bottom: 10px;
+
       }
       canvas {
         border: 1px solid #555;
@@ -22,18 +21,67 @@
       button,input {
         margin-right: 8px;
       }
+      .paint-app {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      
+      .toolbar {
+        background: #c0c0c0;
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        border: 2px solid #808080;
+      }
+      
+      .toolbar button {
+        width: 36px;
+        height: 36px;
+        background: #e0e0e0;
+        border: 2px outset #fff;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      .toolbar button:active {
+        border: 2px inset #fff;
+      }
+      
+      canvas {
+        background: white;
+        border: 2px solid #808080;
+      }
+      
+      .color-bar {
+        margin-top: 10px;
+        background: #c0c0c0;
+        padding: 6px;
+        border: 2px solid #808080;
+        display: flex;
+        gap: 10px;
+      }
     </style>
   </head>
   <body>
     <h1>Shampoo - paint</h1>
-    <div class="toolbar">
-      <input type="color" id="color" value="#000000">
-      <input type="range" id="size" min="1" max="30" value="5">
-      <button id ="eraser">Eraser</button>
-      <button id ="clear">Clear</button>
+    <div class="paint-app">
+      <div class="toolbar">
+        <button data-tool="brush">✏️</button>
+        <button data-tool="eraser">🧽</button>
+        <input type="range" id="size" min="1" max="30" value="5">
+      </div>
+
+      <canvas id="canvas" width="800" height="500"></canvas>
+      
     </div>
 
-    <canvas id="canvas" width="800" height="500"></canvas>
+    <div class="color-bar">
+      <input type="color" id="color" value="#000000">
+      <button id="clear">Clear</button>
+    </div>
+    
     <script src="paint.js"></script>
   </body>
 </html>
