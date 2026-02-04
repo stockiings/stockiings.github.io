@@ -4,6 +4,7 @@ const ctx = canvas.getContext("2d");
 let drawing = false;
 let brushcolor = "#000000";
 let brushsize = 5;
+let tool = "brush";
 
 // Set defaults
 ctx.lineCap = "round";
@@ -19,17 +20,38 @@ canvas.addEventListener("mouseleave", () => drawing=false);
 
 canvas.addEventListener("mousemove", draw); 
 
-function draw(e) {
-  if(!drawing) return;
+document.querySelectorAll(".toolbar button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    tool = btn.dataset.tool;
+  });
+});
 
-  ctx.strokeStyle = brushcolor;
-  ctx.lineWidth = brushsize;
+document.querySelectorAll(".toolbar button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    tool = btn.dataset.tool;
+    document.querySelectorAll(".toolbar button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
+});
+
+
+function draw(e) {
+  if (!drawing) return;
+
+  ctx.lineWidth = brushSize;
+
+  if (tool === "eraser") {
+    ctx.globalCompositeOperation = "destination-out";
+    ctx.strokeStyle = "rgba(0,0,0,1)";
+  } else {
+    ctx.globalCompositeOperation = "source-over";
+    ctx.strokeStyle = brushColor;
+  }
 
   ctx.lineTo(e.offsetX, e.offsetY);
   ctx.stroke();
-  ctx.beginPath();
-  ctx.moveTo(e.offsetX, e.offsetY);
 }
+
 
 // color picker
 document.getElementById("color").addEventListener("change", e => {
