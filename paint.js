@@ -6,12 +6,15 @@ let brushcolor = "#000000";
 let brushsize = 5;
 let tool = "brush";
 
+let isNewStroke = false;   // ← NEW flag
+
 // Set defaults
 ctx.lineCap = "round";
 
 function startStroke(x, y) {
   ctx.beginPath();
   ctx.moveTo(x, y);
+  isNewStroke = true;
 }
 
 // mouse setup
@@ -82,6 +85,15 @@ function draw(e) {
     ctx.strokeStyle = brushcolor;
   }
 
+  // *** NEW SECTION ***
+  // If this is the very first point of a fresh stroke,
+  // move the pen to the current mouse location instead of drawing a line.
+  if (isNewStroke) {
+    ctx.moveTo(e.offsetX, e.offsetY);
+    isNewStroke = false;   // reset for subsequent points
+  }
+
+  // Normal drawing path
   ctx.lineTo(e.offsetX, e.offsetY);
   ctx.stroke();
 }
