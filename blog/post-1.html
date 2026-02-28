@@ -17,15 +17,60 @@
 
 <body class="blog-page" style="background: white;">
 
-  <nav class="navigation">
+  <section>
+		<nav class="navigation">
     <img src="../main_assets/images/stockingsbanner2.jpg" width="20%">
     <ul>
       <li><a href="../index.html">Home</a></li>
+      <li><a href="../contents.html">Contents</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../works.html">Works</a></li>
+      <li><a href="../links.html">Links</a></li>
+      <li><a href="../about.html">About</a></li>
       <li><a href="index.html">Blog</a></li>
     </ul>
   </nav>
+<div class="social">
+	<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
+	<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
+
+</div>
+<div class="email">
+	<p id="emailText" onclick="copyText()">Email: stockiings@proton.me</p>
+</div>
+	</section>
 
   <img id="bg-image" src="../main_assets/images/shiori_cover.png">
+
+  <script>
+			function copyText() {
+				const el = document.getElementById("emailText");
+					
+				navigator.clipboard.writeText("stockiings@proton.me");
+					
+				const original = el.textContent;
+				el.textContent="Copied!"
+				el.classList.add("copied");
+					
+				setTimeout(() => {
+					el.textContent = original;
+					el.classList.remove("copied");
+				}, 1200);
+			}
+			</script>
+			
+			<script>
+				const bgimg = document.getElementById("bg-image");
+				
+				// background
+				document.addEventListener("mousemove", (e) => {
+				const offsetX = (e.clientX - window.innerWidth / 2) / 20;
+				const offsetY = (e.clientY - window.innerHeight / 2) / 20;
+
+					bgimg.style.transform =
+					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
+				});
+			</script>
 
   <div class="main">
     <h1>My First Blog Post</h1>
