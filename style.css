@@ -184,7 +184,7 @@ nav ul {
   z-index: 2;
 }
 
-main {
+.main {
   position: absolute;
   top: 20vh;              
   left: 67%;
@@ -198,4 +198,5 @@ main {
 body.blog-page {
   overflow: auto;
 }
+
 
