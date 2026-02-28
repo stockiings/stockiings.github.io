@@ -210,18 +210,8 @@ body.blog-page .main {
   background: white;
   padding: 2rem;
   border-radius: 8px;
-  color: #111; /* dark text */
+
 }
-
-body.blog-page h1,
-body.blog-page h2,
-body.blog-page h3,
-body.blog-page p,
-body.blog-page a {
-  color: #111;
-}
-
-
 
 
 
