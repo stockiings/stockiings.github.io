@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Stockings Blog</title>
+    <link>https://stockiings.github.io/blog/</link>
+    <description>Updates on manga, art, and programming projects by Stockings</description>
+    <language>en-us</language>
+
+    <item>
+      <title>First Blog Post</title>
+      <link>https://stockiings.github.io/blog/post-1.html</link>
+      <description>This is my first blog entry. Hmmm… mostly just seeing if it works.</description>
+      <pubDate>Fri, 28 Feb 2026 10:00:00 +0000</pubDate>
+      <guid>https://stockiings.github.io/blog/post-1.html</guid>
+    </item>
+
+  </channel>
+</rss>
