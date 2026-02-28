@@ -203,7 +203,7 @@ body.blog-page {
   font-family: sans-serif;
     margin: 0;
     padding: 20px;
-    font-color: black;
+
 }
 
 body.blog-page .main {
@@ -220,6 +220,7 @@ body.blog-page p,
 body.blog-page a {
   color: #111;
 }
+
 
 
 
