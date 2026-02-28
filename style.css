@@ -186,11 +186,16 @@ nav ul {
 
 main {
   position: absolute;
-  top: 20vh;              /* below your header */
+  top: 20vh;              
   left: 67%;
   transform: translateX(-50%);
   width: 90%;
-  height: 60vh;           /* defines scroll area */
+  height: 60vh;           
   overflow-y: auto;
   z-index: 2;
 }
+
+body.blog-page {
+  overflow: auto;
+}
+
