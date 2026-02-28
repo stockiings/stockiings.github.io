@@ -200,7 +200,12 @@ body.blog-page {
   background: white;
   color: black;
   overflow: auto; 
+  font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-color: black;
 }
+
 
 
 
