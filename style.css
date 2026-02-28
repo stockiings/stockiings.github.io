@@ -197,7 +197,9 @@ main {
 }
 
 body.blog-page {
-  overflow: auto;
+  background: white;
+  color: black;
+  overflow: auto; 
 }
 
 
