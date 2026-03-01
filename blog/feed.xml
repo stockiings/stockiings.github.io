@@ -5,7 +5,13 @@
     <link>https://stockiings.github.io/blog/</link>
     <description>Updates on manga, art, and programming projects by Stockings</description>
     <language>en-us</language>
-
+    <item>
+      <title>finishing up Himawari</title>
+      <link>https://stockiings.github.io/blog/post-3.html</link>
+      <description>page updates and some character sketches</description>
+      <pubDate>Fri, 28 Feb 2026 10:00:00 +0000</pubDate>
+      <guid>https://stockiings.github.io/blog/post-3.html</guid>
+    </item>
     <item>
       <title>First Blog Post</title>
       <link>https://stockiings.github.io/blog/post-1.html</link>
