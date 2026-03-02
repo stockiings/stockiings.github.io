@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Inking has started!</title>
+  <link rel="stylesheet" href="../style.css">
+	<script data-goatcounter="https://stockiings.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body class="blog-page" style="background: white;">
+
+  <section style="color: white">
+		<nav class="navigation">
+    
+    <ul style="color: white">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../contents.html">Contents</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../works.html">Works</a></li>
+      <li><a href="../links.html">Links</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="index.html">Blog</a></li>
+    </ul>
+  </nav>
+<div class="social" style="color: white">
+	<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
+	<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
+
+</div>
+<div class="email" style="color: white">
+	<p id="emailText" onclick="copyText()" style="color: white"">Email: stockiings@proton.me</p>
+	<a href="feed.xml" target="_blank" style="color: white">Subscribe via RSS</a>
+</div>
+	</section>
+
+  <img id="bg-image" class="no-select" src="../main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false" alt="anime/manga Art Background by stockings">
+
+  <script>
+			function copyText() {
+				const el = document.getElementById("emailText");
+					
+				navigator.clipboard.writeText("stockiings@proton.me");
+					
+				const original = el.textContent;
+				el.textContent="Copied!"
+				el.classList.add("copied");
+					
+				setTimeout(() => {
+					el.textContent = original;
+					el.classList.remove("copied");
+				}, 1200);
+			}
+			</script>
+			
+			<script>
+				const bgimg = document.getElementById("bg-image");
+				
+				// background
+				document.addEventListener("mousemove", (e) => {
+				const offsetX = (e.clientX - window.innerWidth / 2) / 20;
+				const offsetY = (e.clientY - window.innerHeight / 2) / 20;
+
+					bgimg.style.transform =
+					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
+				});
+			</script>
+
+  <div class="main" style="background: white">
+    <h1 style="color: black;">Inking has started!</h1>
+    <p style="color: black;"><i>march 2, 2026</i></p>
+    <p style="color: black;">
+      Inking has officially started! I'm far enough into drafts to start inking aswell as storyboard farther pages
+<br>
+
+	  my old style is coming back! You can really see my inspirations again!<br>
+      <br>
+		<img src="Page 1 inking.png" width="350%" height="350%" alt="draft sketch of page 1 of artist stockings manga 'Ai-chan is all I need', by artist stockings"><br>
+	 for some reason.. just getting what I have inked now is taking much longer than I thought it would...<br>
+		I might be in this one for the long haul. I'm sure I'll get faster though.<br>
+      
+      I'm excited to be seeing this come together!<br>
+		<br>
+      On an unrelated note, I finished <b>Tasokare Hotel</b> yesterday (Late, I know) and it was so good! it got really intense from ep 10+
+    </p>
+	  <img src="https://m.media-amazon.com/images/S/pv-target-images/1544c515fd131b764efbcc24bce98c24bf7525f4259f59312bc6970cc7af09f4.png" width="50%" height="50%" alt="screenshot of the anime Tasokare Hotel (誰ソ彼ホテル)">
+
+
+    <script src="https://giscus.app/client.js"
+        data-repo="stockiings/stockiings.github.io"
+        data-repo-id="R_kgDOQQBH_w"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQQBH_84C3aFo"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light_high_contrast"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+
+  </div>
+
+</body>
+</html>
