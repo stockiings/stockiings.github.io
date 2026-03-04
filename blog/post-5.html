@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>more inking</title>
+  <link rel="stylesheet" href="../style.css">
+	<script data-goatcounter="https://stockiings.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body class="blog-page" style="background: white;">
+
+  <section style="color: white">
+		<nav class="navigation">
+    
+    <ul style="color: white">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../contents.html">Contents</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../works.html">Works</a></li>
+      <li><a href="../links.html">Links</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="index.html">Blog</a></li>
+    </ul>
+  </nav>
+<div class="social" style="color: white">
+	<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
+	<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
+
+</div>
+<div class="email" style="color: white">
+	<p id="emailText" onclick="copyText()" style="color: white"">Email: stockiings@proton.me</p>
+	<a href="feed.xml" target="_blank" style="color: white">Subscribe via RSS</a>
+</div>
+	</section>
+
+  <img id="bg-image" class="no-select" src="../main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false" alt="anime/manga Art Background by stockings">
+
+  <script>
+			function copyText() {
+				const el = document.getElementById("emailText");
+					
+				navigator.clipboard.writeText("stockiings@proton.me");
+					
+				const original = el.textContent;
+				el.textContent="Copied!"
+				el.classList.add("copied");
+					
+				setTimeout(() => {
+					el.textContent = original;
+					el.classList.remove("copied");
+				}, 1200);
+			}
+			</script>
+			
+			<script>
+				const bgimg = document.getElementById("bg-image");
+				
+				// background
+				document.addEventListener("mousemove", (e) => {
+				const offsetX = (e.clientX - window.innerWidth / 2) / 20;
+				const offsetY = (e.clientY - window.innerHeight / 2) / 20;
+
+					bgimg.style.transform =
+					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
+				});
+			</script>
+
+  <div class="main" style="background: white">
+    <h1 style="color: black;">More inking</h1>
+    <p style="color: black;"><i>march 4, 2026</i></p>
+    <p style="color: black;">
+      Ooooh, more inking! its going well, although slower than I would have liked.
+<br>
+
+	  I'm not sure if its just me.. but its reminding me of that manga <b>Sorry, but I'm Not Yuri (悪いが私は百合じゃない)</b><br>
+      <br>
+		<img src="tie and bob.png" width="35%" height="35%" alt="draft sketch of page 1 of artist stockings manga 'Ai-chan is all I need', by artist stockings"><br>
+	 I couldn't make a post yesterday which sucked, but you can't do anything but keep pushing forward!<br>
+		I feel like even if nobody will read this manga, I'll be happy I made it. this is for myself, and others!<br>
+      <br>
+      hmm.. I think my character designing could use more work. maybe I should practice that?<br>
+    </p>
+	  
+
+
+    <script src="https://giscus.app/client.js"
+        data-repo="stockiings/stockiings.github.io"
+        data-repo-id="R_kgDOQQBH_w"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQQBH_84C3aFo"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light_high_contrast"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+
+  </div>
+
+</body>
+</html>
