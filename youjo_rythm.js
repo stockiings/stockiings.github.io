@@ -57,6 +57,8 @@ function game_loop(){
         context.globalAlpha = 0.5;
         context.drawImage(document.getElementById('judgement_line'), 51, 0, 16 *1.2, game_height);
         context.globalAlpha = 1;
+        context.drawImage(document.getElementById('drawn_score_text'), 10, 10, 113 *1.2, 31*1.2);
+
         move_note();
         draw_note();
         
