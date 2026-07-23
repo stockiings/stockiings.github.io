@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+      #game_container{
+        text-align: center;
+      }
+      
+      #game_board{
+        border: 3px solid;
+      }
+      #score_text{
+        font-family: "Permanant Marker", cursive;
+        font-size: 50px;
+      }
+      #reset_button{
+        font-family: "Permanant Marker", cursive;
+        font-size:22px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="game_container">
+      <div style="display:none;">
+        <img id="tanya1" src="https://i.imgur.com/iEbhcBQ.png">
+        <img id="tanya2" src="https://i.imgur.com/Q5tdBmC.png">
+        <img id="cover" src="https://i.imgur.com/hdRiJUB.png">
+        <img id="crosshair" src="https://i.imgur.com/AEAdl51.png">
+        <img id="judgement_line" src="https://i.imgur.com/9DRCwvV.png">
+        <img id="drawn_score_text" src="https://i.imgur.com/Lc6F5kb.png">
+        <audio id="los_los_los" src=""></audio>
+      </div>
+      <canvas id="game_board" width="720" height="500">
+        
+      </canvas>
+      <div id="score_text">0</div>
+      <button id="reset_button">reset</button>
+    </div>
+  </body>
+</html>
