@@ -1,94 +1,212 @@
+<!---
+                                                                                                                                           
+                                                       .  .++++++++++++++++#++-                                                            
+                                                      .+++++++++++++++++++++++++++++                           .                           
+                                                   -#+++++++++++++++++++++++++++++++++#-                                                   
+               ............                      +++++++++++++++++++++++++++++++++++++++#-.--------..........                              
+  .......-----------------+++-+++++-----++++++.###+++++++++++++--+++++++++++################-+++++++++++---------............--------------
++++++++#####################################.###+#+++++++++++++-++++++########################+########################++++################
+###########################################-###+++++++++++++++.+++####++++++++++++++++++++++-##-###########################################
+##########################################+###+++++++++++++++++##++++++++++++++++.++++++++-+.###+##########################################
+#########################################+##+++++++++++++++##+ ++++++++++.++++++++-+++++++.++-+##.#########################################
+##########################################++++++++++++++#+++++ +++++++++--++-###.#-+++++++#-+.++++#################+++++++---++############
+######################################+--++++++++++++#++++++++.++++++++- -.###+.###+++++++##+--++++.----+++++++############################
+---------------------+++++++####+-#####-++++++++++++++++++++++--++++++.-####.#-####-++++++##-##-++++######################################+
+###+++++++++#####################+#####.+++++++++++++++++++++++-++++.###+#-#+#######++++++##.###-+++#####################################  
+#################################+#####.+++++++++++++++++++++--.+.####-#-#--########-+++++##++##- ++-###################################-  
+#################################+#####.++++++.+-+-+++--++++-.######+#-#-########++. .- ++## ###- .+####################################   
+#################################++####-++++++-.--+-++---.########+#.#.-#####   -####---+.####+##  -+##################################    
+##################################+#####-+++++- -++ .############+##++####.-#-+#######-++-####-+#   +-################################.    
+########################################.++++-.#################-#+###-## #+-### ######-.####   #   .++###############################     
+########################################-+--###################+#.##++## ##       #####+-####  -     ++##############################-     
+#####################################   .####################-#--#+####  ##       ###########  +     -+##############################      
+##################################.      ################--+##-#-######  ###      ############.#     -+##############################      
+###############################+          +#################-++.-####-   ###. #. .############## #   .++############################-      
+#############################-             -##+++++++++++++++ ---####### ######  #################-   +-############################       
+###########################                 .++      +.----------######## #######+################+   ++############################       
+########################+                     .     -+ ----------#########. #######################   -+###########################+       
+######################                              -+-.--------.###################################  .+###########################.       
+####################                               - ++ ....----.###################################   +###########################.       
+#################.                                  -++- ....---.##################################-   ++##########################        
+##############+                               .       ++ ........ ########++###################+##+    ++#########################+        
+############                                ...          ........ #######+++################+--##+     ++#########################         
+#########.                               ##. ..           .........###################-###########+    ++########################-         
+#######                                +##-. ..            ....... ++######################+#######    ++########################          
+####+                                ##### ....            ........ ++.-#####################.-####.  ++########################-          
+##.                               .#####-                  ........ -----+.-###############   -##### -++##################++++-+           
+.                                 .##                       ........ -----------.             .####++++-#################+++++-            
+                                                             ........     ----                -#####++++#################+----.            
+                                                             .........                        .######++++################+-...             
+                                                              .......                         -######++++###############+-.. .             
+                                                                ..                            -#######+++###############+-..               
+##                                                                                                ####+++###############-....              
+####                                                                                                ##-++##############+-..                
+######                                                                                               .-++##############--..                
+#########.                                                                                            .+-##############-. .                
+#############                                                                                          --#############--..                 
+################+                                                                                      -+#############--..                 
+####################.                                                                                 .-##############--.                  
+########################                                                                              -.#############---..                 
+############################                                                                         .- #############--..                  
+###############################.                                                                    ... +############...                   
+###################################                                                                     ############-..                    
+######################################                                                                  ############-..                    
+########################################                                                                ############...                    
+#########################################                                                               ############...                    
+########################################-                                                               ###########+..                     
+########################################                                                                ###########-..                     
+########################################                                                                ###########..                      
+#######################################+                                                                .##########..                      
+#######################################+                                                                 #########+..                      
+########################################                                                                 #########-.                       
+########################################                                                                -#########.                        
+########################################                                                                ##########.                        
+########################################                                                                #########-                         
+########################################+                                                              ##########                          
+#########################################                                                              ##########                          
+#########################################                                                              ##########.                         
+##########################################                                                            .##########-                         
+##########################################.                                                           ###########-                         
+##########################################+                                                           ###########+                         
+##########################################+                                                          -############                         
+###########################################                                                          ##############                        
+###########################################                                                          ###############                       
+###########################################                                                         ################                       
+############################+##############                                                         ################+                      
+############################+##############                                                         #################                      
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVアニメ「幼女戦記」ファンのイト</title>
+
+    <div id="display_title" class="outlined_text"><h1><ruby>幼女<rt>ようじょ</rt>戦記<rt>せんき</rt></ruby></h1></div>
+    <div id="display_sub_title"><p1>Saga Of Tanya The Evil</p1></div>
     <style>
       html, body {
-        overflow-x: hidden;
-      }
+    overflow-x: hidden;
+    background-image: url('https://stockiings.github.io/main_assets/images/600px-Youjo-Senki_M1_Garand_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-      #display_title{
-        position: relative;
-        text-align: center;
-        transform: scaleX(3) scaleY(3);
-        top:40px;
-        z-index: 3;
-      }
-      #display_sub_title{
-        position: relative;
-        text-align: center;
-        transform: scaleX(2) scaleY(2);
-        top: 60px;
-        z-index: 2;
-      }
-      #description_box{
-        position: relative;
-        border:2px solid;
-        height:100px;
-        width:500px;
-        text-align: center;
-      }
-      #visha_png{
-        position:relative;
-        margin-right: -200px;
-      }
-      #character_images {
-          display: flex;
-          justify-content: center;
-          
-      }
-      #music{
-        text-align: center;
-        padding-top:60px;
-        padding-bottom:20px;
-      }
-      #cast_stuff1{
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          text-align:center;
-          padding-top:40px;
-      }
-      #cast_stuff2{
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          text-align:center;
-      }
-      #cast_stuff3{
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          text-align:center;
-      }
-      #cast_stuff4{
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          text-align:center;
-      }
-      #cast_stuff5{
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          text-align:center;
-      }
-      #site_desc{
-        text-align: center;
-      }
-      
-      .center {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-      }
-
-    </style>
+#display_title{
+  position: relative;
+  text-align: center;
+  transform: scaleX(1.5) scaleY(1.5);
+  top:40px;
+  z-index: 3;
+  color:white;
+}
+#display_sub_title{
+  color:white;
+  position: relative;
+  text-align: center;
+  transform: scaleX(2) scaleY(2);
+  top: 0px;
+  z-index: 2;
+}
+#description_box{
+  position: relative;
+  border:2px solid;
+  height:100px;
+  width:500px;
+  text-align: center;
+  color:white;
+}
+#visha_png{
+  position:relative;
+  margin-right: -200px;
+}
+#character_images {
+    display: flex;
+    justify-content: center;
     
-    <div id="display_title"><h1><ruby>幼女<rt>ようじょ</rt>戦記<rt>せんき</rt></ruby></h1></div>
-    <div id="display_sub_title"><p1>Saga Of Tanya The Evil</p1></div>
+}
+#music{
+  text-align: center;
+  padding-top:60px;
+  padding-bottom:20px;
+}
+#cast_stuff1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align:center;
+    padding-top:40px;
+    color:white;
+}
+#cast_stuff2{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align:center;
+    color:white;
+}
+#cast_stuff3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align:center;
+    color:white;
+}
+#cast_stuff4{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align:center;
+    color:white;
+}
+#cast_stuff5{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align:center;
+    color:white;
+}
+#site_desc{
+  text-align: center;
+  color:white;
+  filter: drop-shadow(2px 2px  black);
+}
+#chibi{
+  width: 5px;
+  height:5px;
+}
+#draggable {
+  position: fixed;
+  right: 20px;
+  top: 50px;
+  width: 200px;
+  cursor: grab;
+  user-select: none;
+  z-index: 99999;
+  -webkit-user-drag: none;
+}
+
+#draggable:active {
+  cursor: grabbing;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.outlined_text{
+  font-size: 4rem;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-shadow: -4px -4px  black;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+    </style>
   </head>
   <body>
     <div id="character_images">
@@ -212,10 +330,72 @@
         
       </h4>
     </div>
-    <script src="./script.js"></script>
+    <!-- Draggable tanya -->
+      <img id="draggable" src="https://stockiings.github.io/main_assets/images/34e27b589385f3f9e421b5bf41e05c8f-removebg-preview.png" draggable="false"alt="chibi tanya">
+
+    <script>
+      //dragging script not mine
+      const img = document.getElementById("draggable");
+
+      let isDragging = false;
+      let offsetX, offsetY;
+      let vely=0
+      let x = window.innerWidth - img.offsetWidth
+      let y =20
+      const gravity= 0.5
+      let floor = window.innerHeight - img.offsetHeight;
+      
+      img.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        offsetX = e.clientX - img.offsetLeft;
+        offsetY = e.clientY - img.offsetTop;
+        
+      });
+      
+      document.addEventListener("mousemove", (e) => {
+        if (!isDragging) return;
+      
+        img.style.left = `${e.clientX - offsetX}px`;
+        img.style.top = `${e.clientY - offsetY}px`;
+        x = e.clientX - offsetX;
+        y = e.clientY - offsetY;
+        
+        
+      });
+      
+      document.addEventListener("mouseup", () => {
+        isDragging = false;
+      });
+      function getFloor(){
+        return window.innerHeight - img.offsetHeight;
+      }
+      
+      
+      //gravity
+      function update(){
+        if (!isDragging) {
+          vely+=gravity
+          y+=vely
+          
+          img.style.left = `${x}px`;
+          img.style.top = `${y}px`;
+        }
+        else{
+
+        }
+        if (y > getFloor()) {
+          y = floor;
+          vely = 0;
+        }
+
+        
+        requestAnimationFrame(update);
+      }
+      update();
+    </script>
 
     <footer>
-      <a href="https://youjo-senki.jp/">Official Youjo Senki website</a>
+      <a href="https://youjo-senki.jp/" style="color: white;">Official Youjo Senki website</a>
     </footer>
   </body>
 </html>
