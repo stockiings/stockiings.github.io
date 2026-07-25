@@ -1,183 +1,129 @@
-
-html, body {
-  overflow-x: hidden;
-  background-image: url('https://i.pinimg.com/736x/e6/bf/0c/e6bf0c337a4c57d2d23d68d50807b6e0.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-
-#display_title{
-  position: relative;
-  text-align: center;
-  transform: scaleX(1) scaleY(1);
-  top:40px;
-  z-index: 3;
-  color:white;
-}
-#page_title{
-  position: relative;
-  text-align: center;
-  transform: scaleX(1) scaleY(1);
-  z-index: 3;
-  color:white;
-}
-#display_sub_title{
-  color:white;
-  position: relative;
-  text-align: center;
-  transform: scaleX(2) scaleY(2);
-  top: -50px;
-  padding-bottom: 20px;
-  z-index: 2;
-}
-#description_box{
-  position: relative;
-  border:2px solid;
-  height:225px;
-  width:200px;
-  text-align: center;
-  color:white;
-}
-#profile_row{
-  display:flex;
-  justify-content: center;
-}
-#pfp{
-  padding-left:20px;
-  position:relative;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Antigreentea-page</title>
+  </head>
+  <body>
   
+    <div id="display_title" class="outlined_text"><h1>ANTIGREENTEA</h1></div>
+    <div id="display_sub_title"><p>-ストキング-</p></div>
+    <div id="display_sub_title"><p>-Stockings-</p></div>
+    <div id="profile_row">
+   
+      <div id="description_box">
+        
+        <h4>
+          
+          <i>eng/日本語/nl</i><br>
+          15 yrs old <br>
+          Indie artist and animator<br>
+          messing around.
+          I love languages 
+          and<br> all types of media! <br>
+          ________________________<br>
+          Feel free to look around!<br>
+          also check out my works! <br>
+          I make manga, art & animations!
+          
+        </h4>
+        <a href="gallery.html"><p style="color: white;">Art Gallery</p></a>
+        <a href="https://discord.gg/fd9QmvKn2j"><p style="color: white;">Commission Me</p></a>
+        <a href="works.html"><p style="color: white;">Contents</p></a>
+        <a href="works.html"><p style="color: white;">Works</p></a>
+      </div>
+      
+      
+      <div id="profile">
+        <div id="pfp">
+         <a href="blog/index.html"><img src="https://stockiings.github.io/main_assets/images/ranma-anime-cry.gif" alt="ranma1/2 pfp"></a>
+          <p></p><a href="https://gameofdemocracy.org/party/116" style="color: white;">vote for my political party!</a>
+        </div>
+        <div id="status_display">
+          <img src="https://stockiings.github.io/main_assets/images/text_bubble.png">
+          <div id="status_text">Am I being paid for this?</div>
+          <div id="status_emoji_text"></div>
+        </div>
+      </div>
+    </div>
+        
+     
+    <div id="banner">
+      <div class="banner_item">
+        <img src="https://stockiings.github.io/main_assets/images/ena1.png" >
+        <b><p>"that</p></b>
+      </div>
+      <div class="banner_item">
+        <img src="https://stockiings.github.io/main_assets/images/ena2.png">
+        <b><p>is</p></b>
+      </div>
+      <div class="banner_item">
+        <img src="https://stockiings.github.io/main_assets/images/ena3.png">
+        <b><p>most</p></b>
+      </div>
+      <div class="banner_item">
+        <img src="https://stockiings.github.io/main_assets/images/ena4.png">
+        <b><p>categorally</p></b>
+      </div>
+      <div class="banner_item">
+        <img src="https://stockiings.github.io/main_assets/images/ena5.png">
+        <b><p>doable."</p></b>
+      </div>
+    </div>
+    <div id="display_title"><h1 style="text-align: center;">SOCIALS</h1></div>
+    
+     <div id="socials">
+       <div id="pinterest">
+       <h2><b>pinterest</b></h2>
+        <a href="https://pin.it/1qP8Rtjou"><img src="https://stockiings.github.io/main_assets/images
+/1282236301_144x108.png"></a>
+       </div>
+       <div id="deviantart">
+       <h2><b>deviantart</b></h2>
+       <a href="https://www.deviantart.com/mackerelzz"><img src="https://stockiings.github.io/main_assets/images
+/1287103564_144x108.png
+"></a>
+         </div>
+       <div id="github">
+       <h2><b>github</b></h2>
+       <a href="https://github.com/stockiings"><img src="https://stockiings.github.io/main_assets/images
+/1351671628_144x108.png
+"></a>
+         </div>
+       
+     </div>
+    
+       
  
-}
-#profile{
-  position:relative;
-  width: fit-content;
-}
-#pfp img {
-    width:300px;
-    height: 300px;
-    border:4px solid;
-}
-#status_display{
-  position:absolute;
-  top:-30px;
-  right:-120px;
-}
-#status_display img{
-  width:200px;
-}
-#status_text{
-  font-family: "Permanant Marker", cursive;
-  width:100px;
-  text-align: center;
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color:black;
-  font-size:20px;
-  z-index: 99;
-}
-#status_emoji_text{
-  text-align: left;
-  position: absolute;
-  top:-30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size:60px;
-  z-index: 100;
-}
-#banner{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    text-align:center;
-    padding-top:40px;
-    color:white;
-}
-#banner img{
-    width: calc(144px * 0.8);
-    height: calc(108px * 0.8);
-}
-#socials{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    text-align:center;
-    padding-top:40px;
-    color:white;
-}
-#cast_stuff1{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    text-align:center;
-    padding-top:40px;
-    color:white;
-}
-#site_desc{
-  text-align: center;
-  color:white;
-  filter: drop-shadow(2px 2px  black);
-}
-#chibi{
-  width: 5px;
-  height:5px;
-}
-#draggable {
-  position: fixed;
-  right: 20px;
-  top: 50px;
-  width: 200px;
-  cursor: grab;
-  user-select: none;
-  z-index: 99999;
-  -webkit-user-drag: none;
-}
 
-#draggable:active {
-  cursor: grabbing;
-}
+    <div id="display_title"><h1 style="text-align: center;">ABOUT ME</h1></div>
+     <img src="https://stockiings.github.io/main_assets/images
+/reze-chainsaw.gif" class="center"style="height:100px; padding-top:20px;">
+    
+ 
+    <div id="site_desc">
+      <h4 >
+        15 years old<br>
+        I love movies and anime! finding good movies is hard, but when they're good, they're good!<br>
+        I'm really into the 3ds, and all of its games. I dont know much ab the switch era of nintendo<br>
+        My favorite visual artist & author is Tatsuki Fujimoto! He changed the way I write completely!<br> 
+        Favorite movies:<br>
+        All Quiet On The Western Front<br> Jurassic park 1993<br> Scream 1996<br> Venom 2018<br>
+        Favourite TV Shows:<br>
+        Rockos modern life<br>
+        Ongezellig<br> Chainsaw Man<br> Neon Genesis Evangelion<br> Wakfu
+      </h4><br>
+      I love MYTH & ROID as well as Kendrick Lamar, Creepy Nuts, J cole, JID, and many others!<br>
+      Favourite Games
+Pokemon S/M, Quake, Little nightmares
+    </div>
+    <!-- Draggable tanya -->
+      <img id="draggable" src="https://stockiings.github.io/main_assets/images/34e27b589385f3f9e421b5bf41e05c8f-removebg-preview.png" draggable="false"alt="chibi tanya">
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.banner-item p {
-    margin-top: 6px;
-    color: white;
-    text-align: center;
-}
-.outlined_text{
-  font-size: 4rem;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-  text-shadow: -4px -4px  black;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-a img{
-  color: black;
-}
-body.blog-page {
-  background: white;
-  color: black;
-  overflow: auto; 
-  font-family: sans-serif;
-    margin: 0;
-    padding: 20px;
-
-}
-
-body.blog-page .main {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-
-}
-
-
-
+    <script src="script.js" defer></script>
+    <footer>
+    </footer>
+  </body>
+</html>
