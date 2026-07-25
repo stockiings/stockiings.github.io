@@ -15,6 +15,11 @@
         offsetY = e.clientY - img.offsetTop;
         
       });
+      img.addEventListener("dblclick", () => {
+            if(!isDragging){
+              window.open("https://gameofdemocracy.org/party/116", "_blank");
+            }
+    });
       
       document.addEventListener("mousemove", (e) => {
         if (!isDragging) return;
