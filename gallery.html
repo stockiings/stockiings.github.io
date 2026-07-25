@@ -1,248 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>STOCKINGS | GALLERY</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="cyn.png" type="image/png">
-		<meta name="description" content="look at original anime/manga/oneshot artworks by Stockings, both commissioned and non-commissioned">
-		<meta property="og:title" content="Stockings – Manga, Art, and Programming">
-		<meta property="og:description" content="Original manga one-shots, artwork, and programming projects by Stockings.">
-		<meta property="og:image" content="https://stockiings.github.io/main_assets/images/shiori_cover.png">
-		<meta property="og:url" content="https://stockiings.github.io/">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Art-Gallery</title>
+  </head>
+  <body>
+    <style>
+      img {
+        max-height: 100vh;
+        width: auto;
+      }
+      html, body{
+        background-image: url('https://stockiings.github.io/main_assets/images/bb775813d1cd1a0cda3c09ae50ae674f.jpg');
+      }
+    </style>
+  
+    <div id="page_title"><h1 style="top:5px;">ART GALLERY</h1></div>
+    <div id="profile_row">
+   
+      <div id="description_box">
+        <a href="index.html"><p style="color: white;">Home Page</p></a>
+        <a href="gallery.html"><p style="color: white;">Art Gallery</p></a>
+        <a href="https://discord.gg/fd9QmvKn2j"><p style="color: white;">Commission Me</p></a>
+        <a href="works.html"><p style="color: white;">Contents</p></a>
+        <a href="works.html"><p style="color: white;">Works</p></a>
+        <a href="https://gameofdemocracy.org/party/116" style="color: white;">vote for my Saga Of Tanya The Evil political party!</a>
+      </div>
+      
+      <div id="profile">
+        <div id="pfp">
+         <a href="blog/index.html"><img src="https://stockiings.github.io/main_assets/images/ranma-anime-cry.gif" alt="ranma1/2 pfp"></a>
+        </div>
+        <div id="status_display">
+          <img src="https://stockiings.github.io/main_assets/images/text_bubble.png">
+          <div id="status_text">Am I being paid for this?</div>
+          <div id="status_emoji_text"></div>
+        </div>
+      </div>
+    </div>
+    <div id="site_desc">
+      <h2 >
+        My Art Gallery!<br>
+        A showcase of my personal best artworks (In my opinion)<br>
+        I mostly do fanart, but theres some other stuff sprinkled in here.<br>
+        </h2>
+    </div>
 
-		<script data-goatcounter="https://stockiings.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-	</head>
-	<body>
-		<nav class="navigation" aria-label="Main navigation">
-			<h2 class="visually-hidden">Main navigation</h2>
+      <img class="center" src="https://stockiings.github.io/gallery_images/full/coral_glasses_by_mackerelzz_dmdozom-414w-2x.jpg">
+    <img class="center" src="https://stockiings.github.io/gallery_images/full/pfp contest.png">
+    <img class="center" src="https://stockiings.github.io/gallery_images/full/at_with_jazlenelul_by_mackerelzz_dm0cm0i-375w-2x.jpg">
+    <img class="center" src="https://stockiings.github.io/gallery_images/full/Ranma ½.png" style="padding-bottom:20px;">
+    
+  <p style="text-align: center; color: white;">_________________<br>
+  dat is het vor mij!<br>
+  that is it for me!<br>
+  それじゃ！</p>
+    <img class="center" src="https://media1.tenor.com/m/_9r2D5KMdswAAAAd/evangelion-neon-genesis-evangelion.gif" style="padding-top: 10px;">
+    <p><br></p>
 
-			<img src="main_assets/images/stockingsbanner2.jpg" alt="stockings banner" width="20%" height="20%">
+    
+    <!-- Draggable tanya -->
+      <img id="draggable" src="https://stockiings.github.io/main_assets/images/34e27b589385f3f9e421b5bf41e05c8f-removebg-preview.png" draggable="false"alt="chibi tanya">
 
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contents.html">Contents</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="works.html">Works</a></li>
-				<li><a href="links.html">Links</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="blog/index.html">Blog</a></li>
-			 </ul>
-		</nav>
-		<div class="social">
-			<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
-			<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
-
-		</div>
-			<div class="email">
-				<p id="emailText" onclick="copyText()">Email: stockiings@proton.me</p>
-			</div>
-	
-		<header>
-			<img id="bg-image" class="no-select" src="main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false" alt="anime/manga Art Background by stockings">
-			<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>GALLERY</b><br>
-			________________________________________________
-			</h1>
-			<h1>Stockings' gallery</h1>
-
-			
-			<p>
-				This section  features original illustrations and manga artwork by Stockings.
-			</p>
-		</header>
-			<script>
-			function copyText() {
-				const el = document.getElementById("emailText");
-					
-				navigator.clipboard.writeText("stockiings@proton.me");
-					
-				const original = el.textContent;
-				el.textContent="Copied!"
-				el.classList.add("copied");
-					
-				setTimeout(() => {
-					el.textContent = original;
-					el.classList.remove("copied");
-				}, 1200);
-			}
-			</script>
-			
-			<script>
-				const bgimg = document.getElementById("bg-image");
-				
-				// background
-				document.addEventListener("mousemove", (e) => {
-				const offsetX = (e.clientX - window.innerWidth / 2) / 20;
-				const offsetY = (e.clientY - window.innerHeight / 2) / 20;
-
-					bgimg.style.transform =
-					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
-				});
-			</script>
-			<main>
-				<section class="gallery">
-					<img
-						src="gallery_images/thumbs/pfp contest_40.png"
-						data-full="gallery_images/full/pfp contest.png"
-						alt="anime drawing of a character on a magazine cover  by artist stockings"
-						loading="lazy"
-					  >
-					<img
-						src="gallery_images/thumbs/90s anime_40.png"
-						data-full="gallery_images/full/90s anime.png"
-						alt="anime drawing of Ranma saotome from the 80s anime ranma 1/2 or Ranma ½ in his female form, and Rei ayanami from the 90s anime Neon Genesis Evangelion by artist stockings"
-						loading="lazy"
-					  >
-					<img
-						src="gallery_images/thumbs/Ranma ½_40.png"
-						data-full="gallery_images/full/Ranma ½.png"
-						alt="anime drawing of Ranma saotome from the 80s anime ranma 1/2 or Ranma ½ in his female form by artist stockings"
-						loading="lazy"
-					  >
-					<img
-						src="gallery_images/thumbs/miku_40.png"
-						data-full="gallery_images/full/miku.png"
-						alt="anime drawing of Hatsune Miku + pfp comm by artist stockings"
-						loading="lazy"
-					  >
-					<img
-						src="gallery_images/thumbs/Dokuro-Chan and Sabato-Chan_40.png"
-						data-full="gallery_images/full/Dokuro-Chan and Sabato-Chan.png"
-						alt="anime drawing of Dokuro Mitsukai (三塚井 ドクロ, Mitsukai Dokuro) and Sabato Mihashigo (三橋檎 サバト, Mihashigo Sabato) from Bludgeoning Angel Dokuro-chan (Japanese: 撲殺天使ドクロちゃん, Hepburn: Bokusatsu Tenshi Dokuro-chan) by artist stockings"
-						loading="lazy"
-					  >
-					<img
-						src="gallery_images/thumbs/Ai_40.png"
-						data-full="gallery_images/full/Ai.png"
-						alt="anime drawing of original character Aimii, by artist stockings"
-						loading="lazy"
-					  >
-					<img
-						src="gallery_images/thumbs/himawari_40.png"
-						data-full="gallery_images/full/himawari character sheet.png"
-						alt="character sheet of original character himawari fumiko, by artist stockings"
-						loading="lazy"
-					  >
-					<img
-						src="gallery_images/thumbs/beach sketch_40.png"
-						data-full="gallery_images/full/beach sketch.png"
-						alt="an artwork of an anime girl at the beach, holding a ball, by artist stockings"
-						loading="lazy"
-					  >
-					<img
-						src="gallery_images/thumbs/cyn_40.png"
-						data-full="gallery_images/full/Cyn_finished.png"
-						alt="an artwork of the character Cyn or 'cynessa' or 'absolute solver' from murder drones, by artist stockings"
-						loading="lazy"
-					  >
-					
-					<img
-						src="gallery_images/thumbs/yuyu_hakusho_40.png"
-						data-full="gallery_images/full/yuyu_hakusho.png"
-						alt="a yuyu hakusho x chainsaw man art piece, where yusuke is in the same pose as makima, by artist stockings"
-						loading="lazy"
-					  >
-					
-					<img
-						src="gallery_images/thumbs/ryouka_40.png"
-						data-full="gallery_images/full/Ryouka.png"
-						alt="an art competition entry by artist stockings"
-						loading="lazy"
-					  >
-					
-					<img
-						src="gallery_images/thumbs/pookie_40.jpg"
-						data-full="gallery_images/full/pookie.png"
-						alt="an art competition entry by artist stockings"
-						loading="lazy"
-					  >
-				
-					<img
-						src="gallery_images/thumbs/lacy_40.png"
-						data-full="gallery_images/full/lacy.png"
-						alt="anime girl illustration, Lacy arg character, by artist stockings"
-						loading="lazy"
-					  >
-				
-					<img
-						src="gallery_images/thumbs/digi_40.png"
-						data-full="gallery_images/full/digi.png"
-						alt="anime girl illustration, by artist stockings"
-						loading="lazy"
-					  >
-				
-				
-					<img
-						src="gallery_images/thumbs/kemi_40.png"
-						data-full="gallery_images/full/kemi.png"
-						alt="anime girl illustration, by artist stockings"
-						loading="lazy"
-					  >
-				
-					<img
-						src="gallery_images/thumbs/julie_40.png"
-						data-full="gallery_images/full/julie.png"
-						alt="anime girl illustration, by artist stockings"
-						loading="lazy"
-					  >
-				
-					<img
-						src="gallery_images/thumbs/olivia_40.png"
-						data-full="gallery_images/full/Olivia.png"
-						alt="anime girl illustration, by artist stockings"
-						loading="lazy"
-					  >
-					  
-				
-				</section>
-			</main>
-			<footer>
-				<h2 class="visually-hidden">
-					Stockings – Manga Artist, Illustrator, and Programmer
-				</h2>
-				<p class="visually-hidden">
-					Stockings is a creator website featuring original manga one-shots,
-					digital artwork, and programming projects.
-				</p>
-			</footer>
-			
-			<div id="lightbox">
-				<img id="lightbox-img">
-			</div>
-			
-			<script>
-				const lightbox= document.getElementById("lightbox");
-				const lightboxImg = document.getElementById("lightbox-img");
-				
-				document.querySelectorAll(".gallery img").forEach(img => {
-				  img.addEventListener("click", () => {
-					lightboxImg.src = img.dataset.full || img.src;
-					lightbox.style.display = "flex";
-				  });
-				});
-				
-				lightbox.addEventListener("click", () => {
-					lightbox.style.display = "none";
-				});
-
-
-			
-			
-			</script>
-
-	</body>
-
+    <script src="script.js" defer></script>
+    <footer>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
