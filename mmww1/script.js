@@ -16,9 +16,9 @@ renderer.setSize(
 document.body.appendChild(renderer.domElement);
 
 const geometry= new THREE.BoxGeometry(
-  1,
-  1,
-  1
+  1, //l
+  1, //w
+  1  //h
 );
 const material = new THREE.MeshBasicMaterial({
   color: 0xff0000
@@ -28,6 +28,16 @@ const cube = new THREE.Mesh(
   geometry,
   material
 );
+
+const ground_geometry = new THREE.planeGeometry(
+  20, //l
+  20  //h
+);
+
+const ground_material = new THREE.meshBasicMaterial({
+  color: 0x228822,
+  side: THREE.DoubleSide
+});
 
 scene.add(cube);
 camera.position.z=5
