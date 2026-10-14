@@ -162,15 +162,7 @@ html, body {
 a img{
   color: black;
 }
-body.blog-page {
-  background: white;
-  color: black;
-  overflow: auto; 
-  font-family: sans-serif;
-    margin: 0;
-    padding: 20px;
 
-}
 
 body.blog-page .main {
   background: white;
