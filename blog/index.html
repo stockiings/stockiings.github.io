@@ -1,110 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>STOCKINGS | BLOG</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../cyn.png" type="image/png">
-	<meta name="description" content="blog page for stockings. lists art and manga updates, status updates, projects, etc">
-	<meta property="og:title" content="Stockings – Manga, Art, and Programming">
-	<meta property="og:description" content="Original manga one-shots, artwork, and programming projects by Stockings.">
-	<meta property="og:image" content="https://stockiings.github.io/main_assets/images/shiori_cover.png">
-	<meta property="og:url" content="https://stockiings.github.io/">
-	<script data-goatcounter="https://stockiings.goatcounter.com/count"
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog-page</title>
+  </head>
+  <body>
+    <script data-goatcounter="https://stockiings.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-	<link rel="alternate" type="application/rss+xml" title="Stockings Blog" href="feed.xml">
-</head>
-
-<body>
-
-	<section>
-		<nav class="navigation">
-    <img src="../main_assets/images/stockingsbanner2.jpg" width="20%">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../contents.html">Contents</a></li>
-      <li><a href="../gallery.html">Gallery</a></li>
-      <li><a href="../works.html">Works</a></li>
-      <li><a href="../links.html">Links</a></li>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="index.html">Blog</a></li>
-    </ul>
-  </nav>
-<div class="social">
-	<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
-	<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
-	
-
-</div>
-<div class="email">
-	<p id="emailText" onclick="copyText()">Email: stockiings@proton.me</p>
-	<a href="feed.xml" target="_blank" style="color: white">Subscribe via RSS</a>
-</div>
-	</section>
+    <style>
+      img {
+        max-height: 100vh;
+        width: auto;
+      }
+    </style>
   
-  <header>
-			<img id="bg-image" class="no-select" src="../main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false" alt="anime/manga Art Background by stockings">
-			<h1 id="alias" class="no-select" style="color: rgb(225,225,225);"><b>BLOG</b><br>
-			________________________________________________
-			</h1>
-			<p>
-				This section features Stockings's blog page, linking to all other pages,providing art and manga updates, status updates, projects, etc
-			</p>
-			<h1>Blog</h1>
-</header>
-<script>
-			function copyText() {
-				const el = document.getElementById("emailText");
-					
-				navigator.clipboard.writeText("stockiings@proton.me");
-					
-				const original = el.textContent;
-				el.textContent="Copied!"
-				el.classList.add("copied");
-					
-				setTimeout(() => {
-					el.textContent = original;
-					el.classList.remove("copied");
-				}, 1200);
-			}
-			</script>
-			
-			<script>
-				const bgimg = document.getElementById("bg-image");
-				
-				// background
-				document.addEventListener("mousemove", (e) => {
-				const offsetX = (e.clientX - window.innerWidth / 2) / 20;
-				const offsetY = (e.clientY - window.innerHeight / 2) / 20;
-
-					bgimg.style.transform =
-					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
-				});
-			</script>
-	
-  <div class="main">
+    <div id="page_title"><h1 style="top:5px;">ART GALLERY</h1></div>
+    <div id="profile_row">
+   
+      <div id="description_box">
+        <a href="index.html"><p style="color: white;">Home Page</p></a>
+        <a href="gallery.html"><p style="color: white;">Art Gallery</p></a>
+        <a href="https://discord.gg/fd9QmvKn2j"><p style="color: white;">Commission Me</p></a>
+        <a href="works.html"><p style="color: white;">Contents</p></a>
+        <a href="works.html"><p style="color: white;">Works</p></a>
+        <a href="https://gameofdemocracy.org/party/116" style="color: white;">vote for my Saga Of Tanya The Evil political party!</a>
+      </div>
+      
+      <div id="profile">
+        <div id="pfp">
+         <a href="blog/index.html"><img src="https://stockiings.github.io/main_assets/images/ranma-anime-cry.gif" alt="ranma1/2 pfp"></a>
+        </div>
+        <div id="status_display">
+          <img src="https://stockiings.github.io/main_assets/images/text_bubble.png">
+          <div id="status_text">Am I being paid for this?</div>
+          <div id="status_emoji_text"></div>
+        </div>
+      </div>
+    </div>
+    <div id="site_desc">
+      <h2 >
+        Blog<br>
+        </h2>
+       <p style="text-align: center; color: white;">________________________________________________<br>
+    </div>
+    <div class="main" style="text-align: center">
 	  <p2>
-		  <a href="post-6.html" style="color:white" text-decorations="none">"Sonia Sotomayor - Girl From The Bronx to Supreme Court Judge 10.13.26</a> <br>
-		  <a href="post-5.html" style="color:white" text-decorations="none">"More inking! Himawari's friends! 3.4.26</a> <br>
-		  <a href="post-4.html" style="color:white" text-decorations="none">"Inking has officially started! 3.2.26</a> <br>
-		<a href="post-3.html" style="color:white" text-decorations="none">"finishing up Himawari, draft update, sketches 3.1.26</a> <br>
-      <a href="post-2.html" style="color:white" text-decorations="none">"Ai-chan is all I need" draft update 2.28.26</a> <br>
+		  <a href="post-6.html" style="color:white" text-decorations="none">"Sonia Sotomayor - Girl From The Bronx to Supreme Court Judge 10.13.26</a> <br><br>
+		  <a href="post-5.html" style="color:white" text-decorations="none">"More inking! Himawari's friends! 3.4.26</a> <br><br>
+		  <a href="post-4.html" style="color:white" text-decorations="none">"Inking has officially started! 3.2.26</a> <br><br>
+		<a href="post-3.html" style="color:white" text-decorations="none">"finishing up Himawari, draft update, sketches 3.1.26</a> <br><br>
+      <a href="post-2.html" style="color:white" text-decorations="none">"Ai-chan is all I need" draft update 2.28.26</a> <br><br>
     </p2>
     <p2>
       <a href="post-1.html" style="color:white" text-decorations="none">First Blog Post 2.28.26</a>
+      <br><br>
     </p2>
     
 
   </div>
+    
+    <img class="center" src="https://media1.tenor.com/m/_9r2D5KMdswAAAAd/evangelion-neon-genesis-evangelion.gif" style="padding-top: 10px;">
+    <p><br></p>
 
-  <footer>
-		<h2 class="visually-hidden">
-			Stockings – Manga Artist, Illustrator, and Programmer
-		</h2>
-		<p class="visually-hidden">
-			Stockings is a creator website featuring original manga one-shots,
-			digital artwork, and programming projects.
-		</p>
-</footer>
+    
+    <!-- Draggable tanya -->
+      <img id="draggable" src="https://stockiings.github.io/main_assets/images/34e27b589385f3f9e421b5bf41e05c8f-removebg-preview.png" draggable="false"alt="chibi tanya">
 
-</body>
+    <script src="script.js" defer></script>
+    <footer>
+    </footer>
+  </body>
 </html>
