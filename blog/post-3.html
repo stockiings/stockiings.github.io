@@ -9,61 +9,28 @@
 
 <body class="blog-page" style="background: white;">
 
-  <section style="color: white">
-		<nav class="navigation">
-    
-    <ul style="color: white">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../contents.html">Contents</a></li>
-      <li><a href="../gallery.html">Gallery</a></li>
-      <li><a href="../works.html">Works</a></li>
-      <li><a href="../links.html">Links</a></li>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="index.html">Blog</a></li>
-    </ul>
-  </nav>
-<div class="social" style="color: white">
-	<a href="https://pin.it/1tdZrZRJ2" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/pinterest.png" alt="pinterest" width="35px" height="35px"></a>
-	<a href="https://github.com/stockiings" target="_blank" rel="noopener noreferrer"><img id="social" src="../main_assets/images/github.png" alt="github" width="35px" height="35px"></a>
-
-</div>
-<div class="email" style="color: white">
-	<p id="emailText" onclick="copyText()" style="color: white"">Email: stockiings@proton.me</p>
-	<a href="feed.xml" target="_blank" style="color: white">Subscribe via RSS</a>
-</div>
-	</section>
-
-  <img id="bg-image" class="no-select" src="../main_assets/images/shiori_cover.png" width="2200" height="1200" draggable="false" alt="anime/manga Art Background by stockings">
-
-  <script>
-			function copyText() {
-				const el = document.getElementById("emailText");
-					
-				navigator.clipboard.writeText("stockiings@proton.me");
-					
-				const original = el.textContent;
-				el.textContent="Copied!"
-				el.classList.add("copied");
-					
-				setTimeout(() => {
-					el.textContent = original;
-					el.classList.remove("copied");
-				}, 1200);
-			}
-			</script>
-			
-			<script>
-				const bgimg = document.getElementById("bg-image");
-				
-				// background
-				document.addEventListener("mousemove", (e) => {
-				const offsetX = (e.clientX - window.innerWidth / 2) / 20;
-				const offsetY = (e.clientY - window.innerHeight / 2) / 20;
-
-					bgimg.style.transform =
-					`translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
-				});
-			</script>
+  <div id="profile_row">
+   
+      <div id="description_box">
+        <a href="../index.html"><p style="color: white;">Home Page</p></a>
+        <a href="../gallery.html"><p style="color: white;">Art Gallery</p></a>
+        <a href="../https://discord.gg/fd9QmvKn2j"><p style="color: white;">Commission Me</p></a>
+        <a href="../works.html"><p style="color: white;">Contents</p></a>
+        <a href="../works.html"><p style="color: white;">Works</p></a>
+        <a href="https://gameofdemocracy.org/party/116" style="color: white;">vote for my Saga Of Tanya The Evil political party!</a>
+      </div>
+      
+      <div id="profile">
+        <div id="pfp">
+         <a href="stockiings.github.io/blog/index.html"><img src="https://stockiings.github.io/main_assets/images/ranma-anime-cry.gif" alt="ranma1/2 pfp"></a>
+        </div>
+        <div id="status_display">
+          <img src="https://stockiings.github.io/main_assets/images/text_bubble.png">
+          <div id="status_text">Am I being paid for this?</div>
+          <div id="status_emoji_text"></div>
+        </div>
+      </div>
+    </div>
 
   <div class="main" style="background: white">
     <h1 style="color: black;">finishing up Himawari</h1>
