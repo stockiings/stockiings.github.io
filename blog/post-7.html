@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>My Name Is ____.</title>
+  <link rel="stylesheet" href="../style.css">
+	<script data-goatcounter="https://stockiings.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body class="blog-page">
+
+  <div id="profile_row">
+   
+      <div id="description_box">
+        <a href="../index.html"><p style="color: white;">Home Page</p></a>
+        <a href="../gallery.html"><p style="color: white;">Art Gallery</p></a>
+        <a href="../https://discord.gg/fd9QmvKn2j"><p style="color: white;">Commission Me</p></a>
+        <a href="../works.html"><p style="color: white;">Contents</p></a>
+        <a href="../works.html"><p style="color: white;">Works</p></a>
+        <a href="https://gameofdemocracy.org/party/116" style="color: white;">vote for my Saga Of Tanya The Evil political party!</a>
+      </div>
+      
+      <div id="profile">
+        <div id="pfp">
+         <a href="index.html"><img src="https://stockiings.github.io/main_assets/images/ranma-anime-cry.gif" alt="ranma1/2 pfp"></a>
+        </div>
+        <div id="status_display">
+          <img src="https://stockiings.github.io/main_assets/images/text_bubble.png">
+          <div id="status_text">Am I being paid for this?</div>
+          <div id="status_emoji_text"></div>
+        </div>
+      </div>
+    </div>
+
+  <div class="main" style="background: white">
+    <div id="markdown-content">Loading...</div>
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    // Function to load and display Markdown file
+    async function loadMarkdown(filePath) {
+        try {
+            const response = await fetch(filePath);
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            const text = await response.text();
+            document.getElementById('markdown-content').innerHTML = marked.parse(text);
+        } catch (error) {
+            document.getElementById('markdown-content').innerHTML = `<p style="color:red;">Error loading file: ${error.message}</p>`;
+        }
+    }
+
+    // Load README.md (must be in same directory or adjust path)
+    loadMarkdown('my_name_is.md');
+</script>
+	  
+
+
+    <script src="https://giscus.app/client.js"
+        data-repo="stockiings/stockiings.github.io"
+        data-repo-id="R_kgDOQQBH_w"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQQBH_84C3aFo"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light_high_contrast"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+
+  </div>
+
+</body>
+</html>
